@@ -1,0 +1,30 @@
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(3, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  digitalWrite(6, HIGH);
+  delay(4000); // Espere 4000 milisegundos
+  digitalWrite(13, LOW);
+  delay(10); // Espere 10 milisegundos
+  digitalWrite(6, LOW);
+  delay(10); // Espere 10 milisegundos
+  digitalWrite(11, HIGH);
+  digitalWrite(3, HIGH);
+  delay(4000); // Espere 4000 milisegundos
+  digitalWrite(11, LOW);
+  delay(10); // Espere 10 milisegundos
+  digitalWrite(12, HIGH);
+  delay(1000); // Espere 1000 milisegundos
+  digitalWrite(12, LOW);
+  delay(10); // Espere 10 milisegundos
+  digitalWrite(3, LOW);
+  delay(10); // Espere 10 milisegundos
+}
